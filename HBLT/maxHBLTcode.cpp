@@ -1,18 +1,17 @@
 #include <iostream>
 using namespace std;
 
-// Define MaxHBLT class here instead of in a separate header file
 
 class MaxHBLT {
 public:
-    MaxHBLT();                    // Constructor to initialize an empty HBLT
-    ~MaxHBLT();                   // Destructor to deallocate memory
-    void Insert(const int& key);   // Insert a key into the MaxHBLT
-    void DeleteMax(int& max);      // Remove the maximum element (root) and store it in 'max'
-    void Merge(MaxHBLT& other);    // Merge two MaxHBLTs
+    MaxHBLT();                    
+    ~MaxHBLT();                   
+    void Insert(const int& key);   
+    void DeleteMax(int& max);      
+    void Merge(MaxHBLT& other);   
 
 private:
-    struct Node {                  // Tree node definition
+    struct Node {                  
         int element;               // The value of the node
         Node* left;                // Pointer to the left child
         Node* right;               // Pointer to the right child
