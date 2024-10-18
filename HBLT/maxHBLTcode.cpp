@@ -79,7 +79,7 @@ MaxHBLT::Node* MaxHBLT::Merge(Node* h1, Node* h2) {
 
 int main() {
     int A[100];  
-    int n;       // Number of elements in the array
+    int n;      
 
     cout << "Enter the number of elements: ";
     cin >> n;
@@ -89,27 +89,22 @@ int main() {
         cin >> A[i];
     }
 
-    // Step 1: Declare MaxHBLT object
     MaxHBLT maxHeap;
 
-    // Step 2: Insert all elements of A[] into MaxHBLT
     for (int i = 0; i < n; i++) {
         maxHeap.Insert(A[i]);
     }
 
-    // Step 3: Delete maximum elements from MaxHBLT and store in A[] (sort in ascending order)
     for (int i = n - 1; i >= 0; i--) {
-        maxHeap.DeleteMax(A[i]);  // Delete maximum and store it back in A
+        maxHeap.DeleteMax(A[i]);
     }
 
-    // Step 4: Array A[] is now sorted in non-decreasing order
     cout << "Sorted array: ";
     for (int i = 0; i < n; i++) {
         cout << A[i] << " ";
     }
     cout << endl;
 
-    // Step 5: Find the three smallest elements
     if (n >= 3) {
         cout << "Three smallest elements are: " << A[0] << ", " << A[1] << ", " << A[2] << endl;
     } else {
