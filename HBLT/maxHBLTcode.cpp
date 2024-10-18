@@ -12,22 +12,19 @@ public:
 
 private:
     struct Node {                  
-        int element;               // The value of the node
-        Node* left;                // Pointer to the left child
-        Node* right;               // Pointer to the right child
-        int sValue;                // S-value (null path length)
+        int element;          
+        Node* left;                
+        Node* right;              
+        int sValue;           
 
         Node(int elem) : element(elem), left(nullptr), right(nullptr), sValue(1) {}
     };
 
-    Node* root;                    // Root of the MaxHBLT
-
-    void Clear(Node* t);            // Helper function to delete the tree
-    Node* Merge(Node* h1, Node* h2); // Helper function to merge two subtrees
-    void SwapChildren(Node* t);      // Swap the children of a node if needed to maintain leftist property
+    Node* root;                  
+    void Clear(Node* t);           
+    Node* Merge(Node* h1, Node* h2); 
+    void SwapChildren(Node* t);  
 };
-
-// Implementing the MaxHBLT class methods here
 
 MaxHBLT::MaxHBLT() {
     root = nullptr;
@@ -80,10 +77,8 @@ MaxHBLT::Node* MaxHBLT::Merge(Node* h1, Node* h2) {
     return h1;
 }
 
-// Main function to use the MaxHBLT class
-
 int main() {
-    int A[100];  // Example array, adjust size as needed
+    int A[100];  
     int n;       // Number of elements in the array
 
     cout << "Enter the number of elements: ";
