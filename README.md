@@ -1,1 +1,2 @@
 # algorithms-and-information-structures-csc727
+Basic data structures: lists, trees, balanced trees, hash tables, partially ordered trees, b-trees. Storage management: garbage collection, allocation strategies. Techniques for asymptotic and exact analysis of programs, and criteria for data structure and algorithm selection. Recursion vs. iteration. Methods for the design of efficient algorithms. NP-completeness, examples of intractable problems.
